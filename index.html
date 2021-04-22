@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>music player</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css" id="theme">
+    </head>
+    
+<body>
+<div class="wholegroup">
+<p>Music Player</p>
+
+    <div class="form-group">
+    <img id="track_header" class="header">  
+    <img id="track_bottom" class="bottom">
+    <img id="track_image" class="image1">
+    <img src="playlist.gif" class="avatar">
+        
+        <div class = "songname">
+            <p id="title">title.mp3</p>
+        </div>
+        <div class = "buttons">
+            <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+            <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+        </div>
+
+               <!--- song duration part --->
+        <div class="duration">
+            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+
+    </div>
+</form>
+</div>
+
+  <!--- Add javascript file --->
+  <script src="script.js"></script>
+</body>
+
+</html>
