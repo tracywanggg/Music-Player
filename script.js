@@ -31,7 +31,7 @@ let All_song = [
    {
      name: "honesty - Pink Sweats",
      path: "honesty.mp3",
-     img: "image1.png",
+     img: "image1.PNG",
      img2: "header.png",
      img3: "bottom.png",
 
